@@ -20,7 +20,7 @@ let dbPath = path.join(process.cwd(), 'webshop.db');
 let file = fs.readFileSync(dbPath);
 
 // Connect to the database specified by a single file path
-const db = new sqlite3.Database('dbPath', (err) => {
+const db = new sqlite3.Database(dbPath, (err) => {
     if (err) {
         console.error('Error opening database', err.message);
     } else {
