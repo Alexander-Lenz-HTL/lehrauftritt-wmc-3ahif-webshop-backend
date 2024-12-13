@@ -2,8 +2,8 @@ const express = require('express');
 const sqlite3 = require('sqlite3').verbose();
 const bodyParser = require('body-parser');
 
-import fs from 'fs';
-import path from 'path';
+const fs = require('fs');
+const path = require ('path');
 
 const cors = require('cors');
 
